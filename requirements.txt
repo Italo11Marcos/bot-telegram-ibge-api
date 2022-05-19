@@ -1,0 +1,8 @@
+certifi==2021.10.8
+charset-normalizer==2.0.12
+idna==3.3
+pyTelegramBotAPI==4.5.1
+requests==2.27.1
+style==1.1.0
+update==0.0.1
+urllib3==1.26.9
