@@ -2,9 +2,12 @@ import telebot
 import requests
 import re
 
+# Coloque sua api key
 CHAVE_API = ""
+
 URL_API = 'https://servicodados.ibge.gov.br/api/v2/censos/nomes/{nome}'
 
+# Inicia a instância 
 bot = telebot.TeleBot(CHAVE_API)
 
 def frequenciaPorNome(nome):
@@ -27,4 +30,5 @@ def responder(mensagem):
     msg = frequenciaPorNome(nome)
     bot.reply_to(mensagem, msg)
 
+# Para deixar o bot executando
 bot.polling()
